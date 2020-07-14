@@ -24,11 +24,6 @@ let prevNumber = ''
 let calculationOperator = ''
 let currentNumber = '0'
 
-/* delete */
-const inputNumber = (number) => {
-  currentNumber = number
-}
-/* delete */
 
 numbers.forEach((number) => {
   number.addEventListener("click", (event) => {
@@ -59,23 +54,9 @@ const inputOperator = (operator) => {
   currentNumber = ''
 }
 
-/*delete*/
-const operator = document.quarySelectorAll(".operator")
 
-operators.forEach((operator) => {
-  operator.addEventListener("click", (event) => {
-    console.log(event.target.value);
-  })
-})
-/*delete*/
 
-/*delete*/
-const equalSign = document.quarySelector('.equal-sign')
 
-equalSign.addEventListener('click', () => {
-  console.log('equal button is pressed');
-})
-/*delete*/
 
 const calculate = () => {
   let result = ''
@@ -106,13 +87,7 @@ equalSign.addEventListener('click', () => {
   updateScreen(currentNumber)
 })
 
-/*delete*/
-const clearBtn = document.quarySelector('.all-clear')
 
-clearBtn.addEventListener('click', () => {
-  console.log('AC button is pressed');
-})
-/*delete*/
 
 const clearAll = () => {
   prevNumber = ''
@@ -127,13 +102,7 @@ clearBtn.addEventListener('click', () => {
   updateScreen(currentNumber)
 })
 
-/*delete*/
-const decimal = document.quarySelector('.decimal')
 
-decimal.addEventListener('click', (event) => {
-  console.log(event.target.value);
-})
-/*delete*/
 
 inputDecimal = (dot) => {
   currentNumber += dot
